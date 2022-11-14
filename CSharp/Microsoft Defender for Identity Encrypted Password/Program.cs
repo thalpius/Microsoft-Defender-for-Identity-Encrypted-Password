@@ -29,8 +29,8 @@ namespace Microsoft_Defender_for_Identity_Encrypted_Password
         {
             Console.WriteLine("Error: Arguments doesn't seem to be right...");
             Console.WriteLine("");
-            Console.WriteLine("Encrypt: MicrosoftDefenderForIdentityPassword.exe /encrypt /certificatethumbprint:\"E44826<SNIP>2C657B\" /password:\"Thalpius!\"");
-            Console.WriteLine("Decrypt: MicrosoftDefenderForIdentityPassword.exe /decrypt /certificatethumbprint:\"E44826<SNIP>2C657B\" /encryptedbytes:\"Egt3I2U<SNIP>o5SgjQ==\"");
+            Console.WriteLine("Encrypt: \"Microsoft Defender for Identity Encrypted Password.exe\" /encrypt /certificatethumbprint:\"E44826<SNIP>2C657B\" /password:\"Thalpius!\"");
+            Console.WriteLine("Decrypt: \"Microsoft Defender for Identity Encrypted Password.exe\" /decrypt /certificatethumbprint:\"E44826<SNIP>2C657B\" /encryptedbytes:\"Egt3I2U<SNIP>o5SgjQ==\"");
             System.Environment.Exit(1);
         }
         static private string EncryptPassword(string CertificateThumbprint, string Password)
