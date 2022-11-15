@@ -2,6 +2,9 @@
 
 When installing a Microsoft Defender for Identity sensor with proxy settings, SensorConfiguration.json contains the password in an encrypted form. Using this tool you can decrypt the password or encrypt the password to add the property "EncryptedBytes" manually so you don't have to reinstall the sensor since the proxy can only be set during the installation.
 
+For more information please check:
+https://thalpius.com/2022/11/15/microsoft-defender-for-identity-decrypt-passwords
+
 Here is an example of a SensorConfiguration.json:
 
 ```json
