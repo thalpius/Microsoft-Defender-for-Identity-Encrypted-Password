@@ -4,8 +4,8 @@ When installing a Microsoft Defender for Identity sensor with proxy settings, Se
 
 I discovered that I could decrypt all passwords found for all non-gMSA accounts entered in the portal at "Directory Services Accounts" since the sensor-updater log contains all encrypted passwords for all accounts. The weird thing is that I can decrypt all passwords with a single certificate. So, once a single server is compromised, which holds the Microsoft Defender for Identity sensor, all passwords are known in plain text using this tool, including all passwords across forests or domains!
 
-For more information please check:
-https://thalpius.com/2022/11/15/microsoft-defender-for-identity-decrypt-passwords
+For more information please check:<br>
+https://thalpius.com/2022/11/15/microsoft-defender-for-identity-encrypted-password/
 
 Here is an example of a SensorConfiguration.json:
 
