@@ -1,6 +1,8 @@
 # Microsoft-Defender-for-Identity-Encrypted-Password
 
-When installing a Microsoft Defender for Identity sensor with proxy settings, SensorConfiguration.json contains the password in an encrypted form. Using this tool you can decrypt the password or encrypt the password to add the property "EncryptedBytes" manually so you don't have to reinstall the sensor since the proxy can only be set during the installation.
+When installing a Microsoft Defender for Identity sensor with proxy settings, SensorConfiguration.json contains the password in an encrypted form. Using this tool you can decrypt the password or encrypt the password to add the property "EncryptedBytes" manually so you do not have to reinstall the sensor since the proxy can only be set during the installation.
+
+I discovered that I could decrypt all passwords found for all non-gMSA accounts entered in the portal at "Directory Services Accounts" since the sensor-updater log contains all encrypted passwords for all accounts. The weird thing is that I can decrypt all passwords with a single certificate. So, once a single server is compromised, which holds the Microsoft Defender for Identity sensor, all passwords are known in plain text using this tool, including all passwords across forests or domains!
 
 For more information please check:
 https://thalpius.com/2022/11/15/microsoft-defender-for-identity-decrypt-passwords
