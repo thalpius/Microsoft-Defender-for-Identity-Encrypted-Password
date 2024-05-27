@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> "This repo is now in 'Blue Screen' mode—archived and frozen in time!"
+
 # Microsoft-Defender-for-Identity-Encrypted-Password
 
 When installing a Microsoft Defender for Identity sensor with proxy settings, SensorConfiguration.json contains the password in an encrypted form. Using this tool you can decrypt the password or encrypt the password to add the property "EncryptedBytes" manually so you do not have to reinstall the sensor since the proxy can only be set during the installation.
